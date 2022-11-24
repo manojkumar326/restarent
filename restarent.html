@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
@@ -12,56 +12,84 @@
     <style>
         #navbar {
             background-color: red;
-        }
-        #side {
+                }
+        .container {
+            display: flex;
+            
+        }        
+        .side {
             background-color: skyblue;
             width: 25%;
-            float: left;
-            border-color: darkblue;
+            border-color: rgb(240, 244, 242);
+            border-width: 20px;
+            border-style:solid;
+            padding: 20px;
+            border-radius: 20px;
+              }
+         .shops {
+            background-color: skyblue;
+            width: 75%;
+            border-color: rgb(240, 244, 242);
+            border-width: 20px;
+            border-style:solid;
+            padding: 20px;
+            border-radius: 20px;
 
-        }
+         }
+         .heading {
+            text-align: center;
+         }     
+
     </style>
-</head>
-<body>
-    <div id="navbar">
+ </head>
+   <body>
+      <div id="navbar">
       
        <h1 style="color:cyan;text-align: center;">search restaurent</h1>
-    </div>
-    <aside class="side">
-        <div>
+      </div>
+      <h1 class="heading">Breakfast Places In Mumbai</h1>
+      <div class="container">
+        <div  class="side">
             <h2>Filter</h2>
             <p>select Location</p>
             <input type="text" placeholder="search location" >
             <button type="submit">submit</button>
-        <H2>Cuisine</H2>
+         <H2>Cuisine</H2>
         
-        <input type="checkbox">south india</input><br>
-        <input type="checkbox">north india</input><br>
-        <input type="checkbox">chinese</input><br>
-        <input type="checkbox">veg</input> 
+         <input type="checkbox">south india</input><br>
+         <input type="checkbox">north india</input><br>
+         <input type="checkbox">chinese</input><br>
+         <input type="checkbox">veg</input> 
         
-        <h2>Cost for two</h2>
+         <h2>Cost for two</h2>
          
-        <input type="checkbox">less then 500</input><br>
-        <input type="checkbox">500 to 1000</input><br>
-        <input type="checkbox">1000 to 1500</input><br>
-        <input type="checkbox">1500+</input> 
+          <input type="checkbox">less then 500</input><br>
+          <input type="checkbox">500 to 1000</input><br>
+          <input type="checkbox">1000 to 1500</input><br>
+          <input type="checkbox">1500+</input> 
 
-        <H2>Sort</H2>
+         <H2>Sort</H2>
 
-        <input type="checkbox">Prise low to high</input><br>
-        <input type="checkbox">Prise high to low</input><br>
-
-        </div>
-        <div>
+         <input type="checkbox">Prise low to high</input><br>
+         <input type="checkbox">Prise high to low</input><br>
 
         </div>
+        <div class="shops">
+           <div><h1>The Big Chill Cakes</h1>
+          <p>FORT</p>
+          <P>Shop1,Plot D, Complex,Mumbai</P></div> <hr>
+          <div><h1>The Big Chill Cakes</h1>
+            <p>FORT</p>
+            <P>Shop1,Plot D, Complex,Mumbai</P></div>
+           
 
-    </aside>
+        </div>
+
+      </div>
 
     
 
     
-</body>
+   </body>
 </html>
 
